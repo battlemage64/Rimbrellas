@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/HarmonyUmbrellaTop.cs">
+    <Files>
+      <File FileName="Umbrellas/HarmonyShowFoldables.cs" Line="33" Column="63" />
+      <File FileName="Umbrellas/UmbrellaDefOf.cs" />
+      <File FileName="Umbrellas/HarmonyCheckUmbrella.cs" Line="20" Column="133" />
+      <File FileName="Umbrellas/HarmonyUmbrellaTop.cs" Line="15" Column="183" />
+      <File FileName="Umbrellas/HarmonyColorHandler.cs" Line="35" Column="177" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Umbrellas" expanded="True">
+            <Node name="Umbrellas" expanded="True">
+              <Node name="HarmonyUmbrellaTop.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
