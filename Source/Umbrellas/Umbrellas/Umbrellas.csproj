@@ -50,13 +50,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HarmonyCheckUmbrella.cs" />
+    <Compile Include="PreventSoakingWet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UmbrellasMod.cs" />
     <Compile Include="UmbrellaDefOf.cs" />
-    <Compile Include="HarmonyColorHandler.cs" />
-    <Compile Include="HarmonyShowFoldables.cs" />
-    <Compile Include="HarmonyUmbrellaTop.cs" />
+    <Compile Include="ColorHandler.cs" />
+    <Compile Include="ShowFoldables.cs" />
+    <Compile Include="GraphicsHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

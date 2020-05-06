@@ -22,8 +22,8 @@ namespace Umbrellas {
     class HarmonyShowFoldables {
         static void Postfix(ref PawnGraphicSet __instance) {
             if (!__instance.pawn.Spawned) return;
-            //Log.Message(__instance.pawn.Map.weatherManager.curWeather.label);
-            if (__instance.pawn.Map.weatherManager.curWeather.rainRate == 0) {
+            if (!(RimbrellasMod.settings.showUmbrellasInRain || RimbrellasMod.settings.showUmbrellasInSnow)) return;
+            if (!(ShowFoldablesNow(__instance.pawn.Map)) || (__instance.pawn.Map.roofGrid.Roofed(__instance.pawn.Position) && !RimbrellasMod.settings.showUmbrellasWhenInside)) {
                 List<ApparelGraphicRecord> remove = new List<ApparelGraphicRecord>();
                 foreach (ApparelGraphicRecord rec in __instance.apparelGraphics) {
                     if (UmbrellaDefMethods.HideableUmbrellaDefs.Contains(rec.sourceApparel.def)) {
@@ -33,8 +33,20 @@ namespace Umbrellas {
                 foreach (ApparelGraphicRecord rec in remove) {
                     __instance.apparelGraphics.Remove(rec);
                 }
-
+                PortraitsCache.SetDirty(__instance.pawn); // NOTE: this is not necessarily required for when the weather changes and could be moved to only call when checking for roof above
             }
+        }
+        private static bool ShowFoldablesNow(Map map) {
+            if (map.weatherManager.curWeather.rainRate == 0) {
+                return false;
+            }
+            if (RimbrellasMod.settings.showUmbrellasInSnow && map.weatherManager.curWeather.snowRate > 0) {
+                return true;
+            }
+            if (RimbrellasMod.settings.showUmbrellasInRain && map.weatherManager.curWeather.snowRate == 0) { // it's already been determined that rainRate > 0 because if it was 0 it would have returned false above
+                return true;
+            }
+            return false;
         }
     }
 }

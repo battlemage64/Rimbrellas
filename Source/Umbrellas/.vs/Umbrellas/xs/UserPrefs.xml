@@ -1,18 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/HarmonyUmbrellaTop.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/UmbrellasMod.cs">
     <Files>
-      <File FileName="Umbrellas/HarmonyShowFoldables.cs" Line="33" Column="63" />
-      <File FileName="Umbrellas/UmbrellaDefOf.cs" />
-      <File FileName="Umbrellas/HarmonyCheckUmbrella.cs" Line="20" Column="133" />
-      <File FileName="Umbrellas/HarmonyUmbrellaTop.cs" Line="15" Column="183" />
-      <File FileName="Umbrellas/HarmonyColorHandler.cs" Line="35" Column="177" />
+      <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="1" Column="1" />
+      <File FileName="Umbrellas/UmbrellasMod.cs" Line="38" Column="76" />
+      <File FileName="Umbrellas/ShowFoldables.cs" Line="36" Column="190" />
+      <File FileName="Umbrellas/PreventSoakingWet.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Umbrellas" expanded="True">
             <Node name="Umbrellas" expanded="True">
-              <Node name="HarmonyUmbrellaTop.cs" selected="True" />
+              <Node name="UmbrellasMod.cs" selected="True" />
             </Node>
           </Node>
         </State>

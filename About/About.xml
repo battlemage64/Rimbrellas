@@ -25,6 +25,10 @@ Mod compatibility: This mod may not work with mods that add modified pawn types,
 -REQUIREMENTS-
 Requires Harmony 2.0.
 
+-TRANSLATION-
+This mod supports English and Chinese (Simplified and Traditional).
+Chinese translation by Zephyr.
+
 As always, if you have questions, suggestions, or bug reports (especially bug reports) leave a comment!</description>
 <author>battlemage64</author>
 <packageId>battlemage64.Rimbrellas</packageId>
