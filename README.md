@@ -1,8 +1,7 @@
-# Rimbrellas
-A mod for the video game RimWorld. Adds umbrellas for your colonists to use.
-
-Description:
-Tired of colonists getting mad about being left out in the rain? Keep them happy and dry with this fantastic new invention: the umbrella! Craftable from any kind of fabric, umbrellas will keep people dry as well as being worth a lot on the market as a symbol of style and fashion!
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+<name>Rimbrellas!</name>
+<description>Tired of colonists getting mad about being left out in the rain? Keep them happy and dry with this fantastic new invention: the umbrella! Craftable from any kind of fabric, umbrellas will keep people dry as well as being worth a lot on the market as a symbol of style and fashion!
 
 -ITEMS-
 Adds five umbrellas of various uses and tech levels:
@@ -26,4 +25,20 @@ Mod compatibility: This mod may not work with mods that add modified pawn types,
 -REQUIREMENTS-
 Requires Harmony 2.0.
 
-As always, if you have questions, suggestions, or bug reports (especially bug reports) leave a comment!
+-TRANSLATION-
+This mod supports English and Chinese (Simplified and Traditional).
+Chinese translation by Zephyr.
+
+As always, if you have questions, suggestions, or bug reports (especially bug reports) leave a comment!</description>
+<author>battlemage64</author>
+<packageId>battlemage64.Rimbrellas</packageId>
+<supportedVersions><li>1.1</li></supportedVersions>
+<modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+</modDependencies>
+</ModMetaData>
