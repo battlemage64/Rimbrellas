@@ -21,7 +21,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>LeftHand</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <wornGraphicPath>Umbrella/Umbrella</wornGraphicPath>
       <layers>
@@ -61,7 +61,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>LeftHand</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <wornGraphicPath>Parasol/Parasol</wornGraphicPath>
       <layers>
@@ -122,7 +122,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>LeftHand</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <wornGraphicPath>Umbrella/Umbrella</wornGraphicPath>
       <layers>
@@ -166,7 +166,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>LeftHand</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <wornGraphicPath>Parasol/Parasol</wornGraphicPath>
       <layers>
