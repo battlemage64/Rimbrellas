@@ -33,6 +33,15 @@ namespace Umbrellas {
             }
             return false;
         }
+
+        public static bool HasCowboyHat(Pawn pawn) {
+            foreach (Thing piece in pawn.apparel.WornApparel) {
+                if (piece.def.Equals(ThingDef.Named("Apparel_CowboyHat"))) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
     
 }

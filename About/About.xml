@@ -32,7 +32,7 @@ Chinese translation by Zephyr.
 As always, if you have questions, suggestions, or bug reports (especially bug reports) leave a comment!</description>
 <author>battlemage64</author>
 <packageId>battlemage64.Rimbrellas</packageId>
-<supportedVersions><li>1.1</li></supportedVersions>
+<supportedVersions><li>1.1</li><li>1.2</li></supportedVersions>
 <modDependencies>
     <li>
         <packageId>brrainz.harmony</packageId>

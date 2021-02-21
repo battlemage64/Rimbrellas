@@ -48,6 +48,10 @@
       <HintPath>..\..\..\..\..\Contents\Resources\Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="QuickFast">
+      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\2296697286\Assemblies\QuickFast.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PreventSoakingWet.cs" />
@@ -57,6 +61,7 @@
     <Compile Include="ColorHandler.cs" />
     <Compile Include="ShowFoldables.cs" />
     <Compile Include="GraphicsHandler.cs" />
+    <Compile Include="CanWear.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

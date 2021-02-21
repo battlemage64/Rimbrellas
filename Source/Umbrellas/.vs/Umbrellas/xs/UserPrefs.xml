@@ -1,17 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/UmbrellasMod.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/ShowFoldables.cs">
     <Files>
-      <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="1" Column="1" />
-      <File FileName="Umbrellas/UmbrellasMod.cs" Line="38" Column="76" />
-      <File FileName="Umbrellas/ShowFoldables.cs" Line="36" Column="190" />
-      <File FileName="Umbrellas/PreventSoakingWet.cs" Line="13" Column="1" />
+      <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="39" Column="72" />
+      <File FileName="Umbrellas/UmbrellasMod.cs" Line="52" Column="87" />
+      <File FileName="Umbrellas/ShowFoldables.cs" Line="49" Column="26" />
+      <File FileName="Umbrellas/PreventSoakingWet.cs" Line="11" Column="215" />
+      <File FileName="Umbrellas/CanWear.cs" Line="9" Column="10" />
+      <File FileName="Umbrellas/GraphicsHandler.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Umbrellas" expanded="True">
             <Node name="Umbrellas" expanded="True">
-              <Node name="UmbrellasMod.cs" selected="True" />
+              <Node name="References" expanded="True" />
+              <Node name="ShowFoldables.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -15,6 +15,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>1800</WorkToMake>
+<MarketValue>75</MarketValue>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <EquipDelay>1.5</EquipDelay>
@@ -54,7 +55,8 @@
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
-      <WorkToMake>3600</WorkToMake>
+      <WorkToMake>2000</WorkToMake>
+<MarketValue>100</MarketValue>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <EquipDelay>1.5</EquipDelay>
@@ -115,7 +117,8 @@
       <Steel>5</Steel>
     </costList>
     <statBases>
-      <WorkToMake>30000</WorkToMake>
+      <WorkToMake>4000</WorkToMake>
+		<MarketValue>150</MarketValue>
       <Mass>0.25</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <EquipDelay>1.5</EquipDelay>
@@ -159,7 +162,8 @@
     </stuffCategories>
 <costList><Steel>5</Steel></costList>
     <statBases>
-      <WorkToMake>40000</WorkToMake>
+<MarketValue>200</MarketValue>
+      <WorkToMake>4500</WorkToMake>
       <Mass>0.25</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <EquipDelay>1.5</EquipDelay>

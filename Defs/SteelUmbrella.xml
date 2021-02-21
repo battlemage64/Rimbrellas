@@ -15,7 +15,8 @@
       <Steel>50</Steel>
     </costList>
     <statBases>
-      <WorkToMake>9000</WorkToMake>
+      <WorkToMake>5000</WorkToMake>
+<MarketValue>100</MarketValue>
       <Mass>10</Mass>
       <EquipDelay>2</EquipDelay>
 	  <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>

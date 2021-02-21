@@ -6,7 +6,36 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Umbrellas {
-    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", new[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(bool), typeof(bool), typeof(bool)})]
+    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", new[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(bool), typeof(bool), typeof(bool) })]
+    class RBHarmonyRearrangePawnGraphics {
+        private static Dictionary<ApparelGraphicRecord, bool> resetValues = new Dictionary<ApparelGraphicRecord, bool>();
+        static void Prefix(ref PawnRenderer __instance, Pawn ___pawn, PawnGraphicSet ___graphics) {
+            foreach (ApparelGraphicRecord record in ___graphics.apparelGraphics) {
+                if (UmbrellaDefMethods.UmbrellaDefs.Contains(record.sourceApparel.def)) {
+                    resetValues.Add(record, record.sourceApparel.def.apparel.hatRenderedFrontOfFace);
+                    record.sourceApparel.def.apparel.hatRenderedFrontOfFace = (___pawn.Rotation == Rot4.North) ? false: true;
+                }
+            }
+            List<ApparelGraphicRecord> graphicsTemp = new List<ApparelGraphicRecord>();
+            foreach (ApparelGraphicRecord record in ___graphics.apparelGraphics) {
+                if (UmbrellaDefMethods.UmbrellaDefs.Contains(record.sourceApparel.def)) {
+                    graphicsTemp.Add(record);
+                }
+            }
+            foreach (ApparelGraphicRecord record in graphicsTemp) {
+                ___graphics.apparelGraphics.Remove(record);
+            }
+            ___graphics.apparelGraphics.AddRange(graphicsTemp);
+        }
+
+        static void Postfix(Pawn ___pawn) {
+            foreach (KeyValuePair<ApparelGraphicRecord, bool> entry in resetValues) {
+                entry.Key.sourceApparel.def.apparel.hatRenderedFrontOfFace = entry.Value;
+            }
+            resetValues.Clear();
+        }
+    }
+    /*[HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", new[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(bool), typeof(bool), typeof(bool)})]
     class HarmonyRedrawUmbrellas {
         static void Postfix(ref PawnRenderer __instance, Vector3 rootLoc, float angle, bool portrait, bool headStump, Rot4 headFacing, Rot4 bodyFacing, RotDrawMode bodyDrawType, Pawn ___pawn, PawnGraphicSet ___graphics) {
             if (___pawn.AnimalOrWildMan()) return;
@@ -69,5 +98,5 @@ namespace Umbrellas {
             Material baseMat = pawn.IsInvisible() ? InvisibilityMatPool.GetInvisibleMat(original) : original;
             return graphics.flasher.GetDamagedMat(baseMat);
         }
-    }
+    }*/
 }
