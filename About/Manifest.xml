@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>Rimbrellas</identifier>
+    <version>1.2.0.0</version>
+    <dependencies>
+        <li>Harmony</li>
+    </dependencies>
+    <!--><incompatibleWith>
+        <li>AndroidTiers</li>
+    </incompatibleWith>-->
+    <loadAfter>
+        <li>Harmony</li>
+		<li>Core</li>
+    </loadAfter>
+    <!--><suggests>
+        <li>ExpansionMod &gt;= 1.5</li>
+        <li>OtherCoolMod</li>
+    </suggests>-->
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://github.com/battlemage64/Rimbrellas/tree/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/battlemage64/Rimbrellas/releases/latest</downloadUri>
+</Manifest>
