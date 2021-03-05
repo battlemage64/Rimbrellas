@@ -5,14 +5,14 @@
     <dependencies>
         <li>Harmony</li>
     </dependencies>
-    <!--><incompatibleWith>
+    <!--<incompatibleWith>
         <li>AndroidTiers</li>
     </incompatibleWith>-->
     <loadAfter>
         <li>Harmony</li>
 		<li>Core</li>
     </loadAfter>
-    <!--><suggests>
+    <!--<suggests>
         <li>ExpansionMod &gt;= 1.5</li>
         <li>OtherCoolMod</li>
     </suggests>-->
