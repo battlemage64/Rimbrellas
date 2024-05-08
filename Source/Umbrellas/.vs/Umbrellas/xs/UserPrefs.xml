@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/ShowFoldables.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/UmbrellaDefOf.cs">
     <Files>
-      <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="39" Column="72" />
-      <File FileName="Umbrellas/UmbrellasMod.cs" Line="52" Column="87" />
-      <File FileName="Umbrellas/ShowFoldables.cs" Line="49" Column="26" />
-      <File FileName="Umbrellas/PreventSoakingWet.cs" Line="11" Column="215" />
-      <File FileName="Umbrellas/CanWear.cs" Line="9" Column="10" />
-      <File FileName="Umbrellas/GraphicsHandler.cs" />
+      <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="17" Column="35" />
+      <File FileName="Umbrellas/UmbrellasMod.cs" Line="32" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,17 +10,17 @@
           <Node name="Umbrellas" expanded="True">
             <Node name="Umbrellas" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="ShowFoldables.cs" selected="True" />
+              <Node name="UmbrellaDefOf.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

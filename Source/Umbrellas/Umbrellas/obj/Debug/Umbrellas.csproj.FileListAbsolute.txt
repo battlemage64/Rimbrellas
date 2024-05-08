@@ -10,3 +10,9 @@
 /Users/arden/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.csproj.CoreCompileInputs.cache
 /Users/arden/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.dll
 /Users/arden/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.pdb
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.csproj.AssemblyReference.cache
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.csproj.CoreCompileInputs.cache
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.dll
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/Source/Umbrellas/Umbrellas/obj/Debug/Umbrellas.pdb
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/1.4/Assemblies/Umbrellas.dll
+/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/1.4/Assemblies/Umbrellas.pdb

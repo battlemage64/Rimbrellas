@@ -12,7 +12,7 @@ namespace Umbrellas {
         }
 		static void Postfix (CompColorable __instance) {
             if (__instance.parent.def.Equals(UmbrellaDefOf.Parasol) || __instance.parent.def.Equals(UmbrellaDefOf.FoldableParasol)) {
-                __instance.Color = RandomColor();
+                __instance.DesiredColor = RandomColor();
             }
         }
 	}
@@ -31,7 +31,7 @@ namespace Umbrellas {
         }
         static void Postfix(ref Thing t) {
             if (t.def.Equals(UmbrellaDefOf.Parasol) || t.def.Equals(UmbrellaDefOf.FoldableParasol)) {
-                t.TryGetComp<CompColorable>().Color = RandomColor();
+                t.TryGetComp<CompColorable>().DesiredColor = RandomColor();
                 //note: this will cause the color to be set twice (it's set again in CompColorable.Initialize because otherwise it wouldn't run at all on debug-generated ones).
                 //So far this has not caused problems.
             }

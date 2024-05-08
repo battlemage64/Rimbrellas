@@ -4,6 +4,18 @@ using Verse.AI;
 using HarmonyLib;
 
 namespace Umbrellas {
+	[HarmonyPatch(typeof(ThoughtWorker_InSunlight), "CurrentStateInternal")]
+	class RBSunlightAffecterPrefix
+	{
+		static void Postfix(Pawn p, ref ThoughtState __result)
+		{
+			if (UmbrellaDefMethods.HasUmbrella(p))
+			{
+                __result = ThoughtState.Inactive;
+			}
+		}
+	}
+
     [HarmonyPatch(typeof(Pawn_MindState), "MindStateTick")]
     class RBMindStatePrefix {
 

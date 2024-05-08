@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Umbrellas {
-    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", new[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(bool), typeof(bool), typeof(bool) })]
+    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", new[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(RotDrawMode), typeof(PawnRenderFlags) })]
     class RBHarmonyRearrangePawnGraphics {
         private static Dictionary<ApparelGraphicRecord, bool> resetValues = new Dictionary<ApparelGraphicRecord, bool>();
         static void Prefix(ref PawnRenderer __instance, Pawn ___pawn, PawnGraphicSet ___graphics) {
