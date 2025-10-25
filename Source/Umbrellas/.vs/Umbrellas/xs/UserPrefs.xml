@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/UmbrellaDefOf.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Umbrellas/PreventSoakingWet.cs">
     <Files>
       <File FileName="Umbrellas/UmbrellaDefOf.cs" Line="17" Column="35" />
-      <File FileName="Umbrellas/UmbrellasMod.cs" Line="32" Column="6" />
+      <File FileName="Umbrellas/UmbrellasMod.cs" />
+      <File FileName="Umbrellas/PreventSoakingWet.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +14,7 @@
           <Node name="Umbrellas" expanded="True">
             <Node name="Umbrellas" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="UmbrellaDefOf.cs" selected="True" />
+              <Node name="PreventSoakingWet.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +24,4 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

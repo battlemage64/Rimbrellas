@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cj5Pemp5tbU=",
+  "success": true,
+  "projectFilePath": "/Users/ardenkolodner/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/Rimbrellas!/1.6/Source/Rimbrellas/Rimbrellas/Rimbrellas.csproj",
+  "expectedPackageFiles": [
+    "/Users/ardenkolodner/.nuget/packages/krafs.rimworld.ref/1.6.4528/krafs.rimworld.ref.1.6.4528.nupkg.sha512",
+    "/Users/ardenkolodner/.nuget/packages/lib.harmony/2.4.1/lib.harmony.2.4.1.nupkg.sha512",
+    "/Users/ardenkolodner/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/Users/ardenkolodner/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
