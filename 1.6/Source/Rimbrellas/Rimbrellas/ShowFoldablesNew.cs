@@ -23,17 +23,21 @@ namespace Umbrellas
         }
     }
 
-    [HarmonyPatch(typeof(PawnRenderTree), "ProcessApparel")]
+    [HarmonyPatch(typeof(PawnRenderNode_Apparel), "GraphicsFor")]
     class RBHarmonyShowFoldables
     {
-        static bool Prefix(ref PawnRenderTree __instance, Apparel ap)
+        static bool Prefix(Pawn pawn, ref PawnRenderNode_Apparel __instance, ref IEnumerable<Graphic> __result)
         {
-            if (!UmbrellaDefMethods.HideableUmbrellaDefs.Contains(ap.def)) return true; // Only check the following logic for umbrellas, not all apparel
+            if (!UmbrellaDefMethods.HideableUmbrellaDefs.Contains(__instance.apparel.def)) return true; // Only check the following logic for umbrellas, not all apparel
 
-            if (!__instance.pawn.Spawned) return true; // If pawn not spawned, just don't mess with execution flow
-            if (!(RimbrellasMod.settings.showUmbrellasInRain || RimbrellasMod.settings.showUmbrellasInSnow)) return false;
-            if ((!RimbrellasMod.settings.showUmbrellas) || (!(ShowFoldablesNow(__instance.pawn.Map)) || (__instance.pawn.Map.roofGrid.Roofed(__instance.pawn.Position) && !RimbrellasMod.settings.showUmbrellasWhenInside)))
+            if (!pawn.Spawned) return true; // If pawn not spawned, just don't mess with execution flow
+            if (!(RimbrellasMod.settings.showUmbrellasInRain || RimbrellasMod.settings.showUmbrellasInSnow)) {
+                __result = Enumerable.Empty<Graphic>();
+                return false;
+            }
+            if ((!RimbrellasMod.settings.showUmbrellas) || (!(ShowFoldablesNow(pawn.Map)) || (pawn.Map.roofGrid.Roofed(pawn.Position) && !RimbrellasMod.settings.showUmbrellasWhenInside)))
             {
+                __result = Enumerable.Empty<Graphic>();
                 return false;
             }
             return true;
